@@ -37,7 +37,7 @@ class RepositoryDetailScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // アイコン & repository名
+                // 作者アイコン & repository名
                 Row(
                   children: [
                     SizedBox(
