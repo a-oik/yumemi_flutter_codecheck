@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
+import 'package:yumemi_flutter_codecheck/view/repository_detail_screen.dart';
 
 /// repository情報のリストタイル
 class RepositoryListTile extends StatelessWidget {
@@ -16,8 +17,14 @@ class RepositoryListTile extends StatelessWidget {
           final item = items[index];
           return GestureDetector(
             onTap: () {
-              // todo: repositoryの詳細情報を表示する
-            },
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return RepositoryDetailScreen(
+                    repoItem: item,
+                  );
+                },
+              );            },
             child: ListTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.transparent,
