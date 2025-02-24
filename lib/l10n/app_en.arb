@@ -4,5 +4,7 @@
   "github_repository_search_comment": "----------repository検索画面----------",
   "repositorySearchScreenTitle": "Search Repositories",
   "searchTextFieldHintText": "repository name",
-  "searchNoneResultMessage": "No results found."
+  "searchNoneResultMessage": "No results found.",
+  "searchShowLicense": "Show License"
+
 }

@@ -4,5 +4,7 @@
   "github_repository_search_comment": "----------repository検索画面----------",
   "repositorySearchScreenTitle": "レポジトリ検索",
   "searchTextFieldHintText": "レポジトリ名",
-  "searchNoneResultMessage": "検索結果が0件です。"
+  "searchNoneResultMessage": "検索結果が0件です。",
+  "searchShowLicense": "ライセンス表示"
+
 }

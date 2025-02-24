@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 import 'package:yumemi_flutter_codecheck/model/repo_search_input.dart';
+import 'package:yumemi_flutter_codecheck/molecules/popup_setting_button.dart';
 import 'package:yumemi_flutter_codecheck/molecules/repository_list_tile.dart';
 
 import '../molecules/search_input_bar.dart';
@@ -36,6 +37,9 @@ class GithubSearchScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(L10n.of(context)!.repositorySearchScreenTitle),
         actions: [
+          // 設定ボタン
+          SearchSettingButton(),
+          // テーマ切り替えボタン
           IconButton(
             // todo: ダークモード対応
             icon: Icon(Icons.dark_mode),
