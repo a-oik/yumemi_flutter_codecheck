@@ -1,0 +1,6 @@
+{
+  "github_repository_search_comment": "----------repository検索画面----------",
+  "repositorySearch": "レポジトリ検索",
+  "searchTextFieldHintText": "レポジトリ名",
+  "searchNoneResultMessage": "検索結果が0件です。"
+}
