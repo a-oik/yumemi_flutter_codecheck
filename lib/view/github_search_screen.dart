@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 import 'package:yumemi_flutter_codecheck/model/repo_search_input.dart';
 import 'package:yumemi_flutter_codecheck/molecules/repository_list_tile.dart';
 
@@ -33,7 +34,7 @@ class GithubSearchScreen extends ConsumerWidget {
     return Scaffold(
       // アプリバー
       appBar: AppBar(
-        title: const Text('GitHub Search'),
+        title: Text(L10n.of(context)!.repositorySearchScreenTitle),
         actions: [
           IconButton(
             // todo: ダークモード対応
@@ -55,7 +56,7 @@ class GithubSearchScreen extends ConsumerWidget {
               data: (data) {
                 // 検索結果が0件の場合の表示
                 if (data.totalCount == 0) {
-                  return Text("検索結果が0件です。");
+                  return Text(L10n.of(context)!.searchNoneResultMessage);
                 }
                 // repositoryリスト表示
                 return RepositoryListTile(items: data.items);
