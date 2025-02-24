@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
 import 'package:yumemi_flutter_codecheck/organisms/repo_info_icon_list.dart';
+import 'package:yumemi_flutter_codecheck/provider/is_dark_mode_provider.dart';
 
 import '../atoms/close_button.dart';
 
@@ -8,14 +10,15 @@ import '../atoms/close_button.dart';
 ///
 /// 以下を表示
 /// リポジトリ名、オーナーアイコン、プロジェクト言語、Star数、Watcher 数、Fork数、Issue数
-class RepositoryDetailScreen extends StatelessWidget {
+class RepositoryDetailScreen extends ConsumerWidget {
   final RepoDataItems repoItem;
 
   const RepositoryDetailScreen({super.key, required this.repoItem});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final repo = repoItem;
+    final isDarkMode = ref.watch(isDarkModeProvider);
     return Center(
       child: Stack(
         children: [
@@ -29,8 +32,7 @@ class RepositoryDetailScreen extends StatelessWidget {
               horizontal: 16.0,
             ),
             decoration: BoxDecoration(
-              // todo: ダークモード反映
-              color: false ? Colors.black : Colors.white,
+              color: isDarkMode ? Colors.black : Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(8.0)),
             ),
             child: SingleChildScrollView(

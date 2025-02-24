@@ -6,6 +6,7 @@ import 'package:yumemi_flutter_codecheck/molecules/popup_setting_button.dart';
 import 'package:yumemi_flutter_codecheck/molecules/repository_list_tile.dart';
 
 import '../molecules/search_input_bar.dart';
+import '../provider/is_dark_mode_provider.dart';
 import '../state_notifier/repo_info_notifier.dart';
 import 'github_search_screen_view_model.dart';
 
@@ -21,6 +22,7 @@ class GithubSearchScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final repoItems = ref.watch(githubRepoProvider);
+    final isDarkMode = ref.watch(isDarkModeProvider);
 
     // 検索時に呼び出す
     void onSearch(String searchText) {
@@ -41,9 +43,10 @@ class GithubSearchScreen extends ConsumerWidget {
           SearchSettingButton(),
           // テーマ切り替えボタン
           IconButton(
-            // todo: ダークモード対応
-            icon: Icon(Icons.dark_mode),
-            onPressed: () {},
+            icon: Icon(isDarkMode ? Icons.dark_mode : Icons.light_mode),
+            onPressed: () {
+              ref.watch(isDarkModeProvider.notifier).state = !isDarkMode;
+            },
           ),
         ],
       ),
