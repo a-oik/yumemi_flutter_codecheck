@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 
 /// 検索バー
 ///
@@ -36,7 +37,7 @@ class SearchInputBar extends StatelessWidget {
                 // todo:sort切り替え
               },
             ),
-            hintText: 'Search Repositories',
+            hintText: L10n.of(context)!.searchTextFieldHintText,
             border: InputBorder.none,
             contentPadding: const EdgeInsets.symmetric(horizontal: 12),
           ),
