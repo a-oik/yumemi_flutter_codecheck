@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// アイコン + 説明文
 class IconWithDescription extends StatelessWidget {
   const IconWithDescription({
     super.key,
