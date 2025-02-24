@@ -1,6 +1,8 @@
 {
+  "@@locale": "en",
+
   "github_repository_search_comment": "----------repository検索画面----------",
-  "repositorySearch": "Search Repositories",
+  "repositorySearchScreenTitle": "Search Repositories",
   "searchTextFieldHintText": "repository name",
   "searchNoneResultMessage": "No results found."
 }
