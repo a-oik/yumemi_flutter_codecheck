@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
-import 'package:yumemi_flutter_codecheck/organisms/repo_info_icon_list.dart';
 import 'package:yumemi_flutter_codecheck/provider/is_dark_mode_provider.dart';
 
-import '../atoms/close_button.dart';
+import 'components/atoms/close_button.dart';
+import 'components/organisms/repo_info_icon_list.dart';
 
 /// Repositoryの詳細を表示する画面
 ///
