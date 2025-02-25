@@ -5,6 +5,7 @@
   "repositorySearchScreenTitle": "レポジトリ検索",
   "searchTextFieldHintText": "レポジトリ名",
   "searchNoneResultMessage": "検索結果が0件です。",
-  "searchShowLicense": "ライセンス表示"
+  "searchShowLicense": "ライセンス表示",
+  "searchApiError": "通信エラーが発生しました。"
 
 }
