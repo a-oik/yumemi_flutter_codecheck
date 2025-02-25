@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 import 'package:yumemi_flutter_codecheck/provider/is_dark_mode_provider.dart';
-import 'package:yumemi_flutter_codecheck/view/github_search_screen.dart';
+import 'package:yumemi_flutter_codecheck/view/screen/github_search_screen.dart';
 
 void main() {
   runApp(ProviderScope(child: const GitHubSearchApp()));

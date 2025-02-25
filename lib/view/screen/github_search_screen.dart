@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 import 'package:yumemi_flutter_codecheck/model/repo_search_input.dart';
-import 'package:yumemi_flutter_codecheck/molecules/popup_setting_button.dart';
-import 'package:yumemi_flutter_codecheck/molecules/repository_list_tile.dart';
+import 'package:yumemi_flutter_codecheck/provider/github_repo_provider.dart';
 
-import '../molecules/search_input_bar.dart';
-import '../provider/is_dark_mode_provider.dart';
-import '../state_notifier/repo_info_notifier.dart';
-import 'github_search_screen_view_model.dart';
+import '../../provider/is_dark_mode_provider.dart';
+import '../components/molecules/popup_setting_button.dart';
+import '../components/molecules/repository_list_tile.dart';
+import '../components/molecules/search_input_bar.dart';
+import '../../view_model/github_search_screen_view_model.dart';
 
 class GithubSearchScreen extends ConsumerWidget {
   GithubSearchScreen({super.key, GithubSearchScreenViewModel? viewModel}) {

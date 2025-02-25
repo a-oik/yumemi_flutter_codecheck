@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
-import 'package:yumemi_flutter_codecheck/molecules/icon_with_description.dart';
+
+import '../molecules/icon_with_description.dart';
 
 /// repositoryのアイコン群
 class RepoInfoIconList extends StatelessWidget {

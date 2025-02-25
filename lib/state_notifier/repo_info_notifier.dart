@@ -2,13 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yumemi_flutter_codecheck/model/api_result.dart';
 import 'package:yumemi_flutter_codecheck/model/repo_search_input.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
-import 'package:yumemi_flutter_codecheck/view/github_search_screen_view_model.dart';
-
-/// Repository検索結果を管理するprovider
-final githubRepoProvider =
-    StateNotifierProvider.autoDispose<RepoInfoNotifier, AsyncValue<RepoInfo>>(
-      (ref) => RepoInfoNotifier(ref),
-    );
+import 'package:yumemi_flutter_codecheck/view_model/github_search_screen_view_model.dart';
 
 /// Repository検索結果を管理するStateNotifier
 ///
