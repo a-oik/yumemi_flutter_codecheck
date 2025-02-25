@@ -10,5 +10,12 @@
   "searchSortStars": "お気に入り数順",
   "searchSortForks": "フォーク数順",
   "searchSortIssues": "issue数順",
-  "searchSortUpdated": "最新順"
+  "searchSortUpdated": "最新順",
+
+  "repository_detail_comment": "----------repository詳細画面----------",
+  "searchDetailStars": "stars",
+  "searchDetailForks": "forks",
+  "searchDetailIssues": "issues",
+  "searchDetailLanguage": "言語:",
+  "searchDetailWatchers": "watchers"
 }

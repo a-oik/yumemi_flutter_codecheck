@@ -10,5 +10,12 @@
   "searchSortStars": "stars",
   "searchSortForks": "forks",
   "searchSortIssues": "issue",
-  "searchSortUpdated": "updated date"
+  "searchSortUpdated": "updated date",
+
+  "repository_detail_comment": "----------repository詳細画面----------",
+  "searchDetailStars": "stars",
+  "searchDetailForks": "forks",
+  "searchDetailIssues": "issues",
+  "searchDetailLanguage": "Language:",
+  "searchDetailWatchers": "watchers"
 }
