@@ -27,11 +27,21 @@ class GithubSearchRepository {
           .get(apiUrl)
           .timeout(const Duration(seconds: 30));
 
+      // ステータスコードが200以外の場合、エラーを返す
+      if (response.statusCode != 200) {
+        return ApiResult(
+          result: RequestResult.apiError,
+          data: RepoInfo(totalCount: 0, items: []),
+          statasCode: response.statusCode,
+        );
+      }
+
       final jsonData = json.decode(response.body);
       final parsedData = RepoInfo.fromJson(jsonData);
       return ApiResult(
         result: RequestResult.success,
         data: parsedData,
+        statasCode: 200,
       );
     } catch (e) {
       return ApiResult(

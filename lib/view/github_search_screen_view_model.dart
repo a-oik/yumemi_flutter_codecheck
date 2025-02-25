@@ -1,4 +1,4 @@
-import 'package:yumemi_flutter_codecheck/repository/github_repository.dart';
+import 'package:yumemi_flutter_codecheck/repository/github_search_repository.dart';
 
 import '../model/api_result.dart';
 import '../model/repo_search_input.dart';
