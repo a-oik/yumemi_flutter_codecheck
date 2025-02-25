@@ -5,6 +5,7 @@
   "repositorySearchScreenTitle": "Search Repositories",
   "searchTextFieldHintText": "repository name",
   "searchNoneResultMessage": "No results found.",
-  "searchShowLicense": "Show License"
+  "searchShowLicense": "Show License",
+  "searchApiError": "An error occurred."
 
 }

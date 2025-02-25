@@ -69,7 +69,7 @@ class GithubSearchScreen extends ConsumerWidget {
                 return RepositoryListTile(items: data.items);
               },
               // todo: エラー時の表示実装
-              error: (error, stack) => SizedBox.shrink(),
+              error: (error, stack) => Text(L10n.of(context)!.searchApiError),
               loading: () => CircularProgressIndicator(),
             ),
           ],
