@@ -28,6 +28,7 @@ class GithubSearchScreen extends ConsumerWidget {
 
     // 検索時に呼び出す
     void onSearch(String searchText) {
+      // todo: sort機能追加
       ref
           .watch(githubRepoProvider.notifier)
           .searchRepo(

@@ -31,13 +31,13 @@ class SearchInputBar extends StatelessWidget {
           decoration: InputDecoration(
             // 検索アイコン
             prefixIcon: const Icon(Icons.search),
-            // 並び替えボタン
-            suffixIcon: IconButton(
-              icon: const Icon(Icons.sort),
-              onPressed: () {
-                // todo:sort切り替え
-              },
-            ),
+            // todo: sort機能実装
+            // // 並び替えボタン
+            // suffixIcon: IconButton(
+            //   icon: const Icon(Icons.sort),
+            //   onPressed: () {
+            //   },
+            // ),
             hintText: L10n.of(context)!.searchTextFieldHintText,
             border: InputBorder.none,
             contentPadding: const EdgeInsets.symmetric(horizontal: 12),
