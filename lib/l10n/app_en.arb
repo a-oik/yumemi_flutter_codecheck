@@ -6,6 +6,9 @@
   "searchTextFieldHintText": "repository name",
   "searchNoneResultMessage": "No results found.",
   "searchShowLicense": "Show License",
-  "searchApiError": "An error occurred."
-
+  "searchApiError": "An error occurred.",
+  "searchSortStars": "stars",
+  "searchSortForks": "forks",
+  "searchSortIssues": "issue",
+  "searchSortUpdated": "updated date"
 }

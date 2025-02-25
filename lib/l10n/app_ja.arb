@@ -6,6 +6,9 @@
   "searchTextFieldHintText": "レポジトリ名",
   "searchNoneResultMessage": "検索結果が0件です。",
   "searchShowLicense": "ライセンス表示",
-  "searchApiError": "通信エラーが発生しました。"
-
+  "searchApiError": "通信エラーが発生しました。",
+  "searchSortStars": "お気に入り数順",
+  "searchSortForks": "フォーク数順",
+  "searchSortIssues": "issue数順",
+  "searchSortUpdated": "最新順"
 }

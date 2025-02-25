@@ -27,12 +27,11 @@ class GithubSearchScreen extends ConsumerWidget {
     final isDarkMode = ref.watch(isDarkModeProvider);
 
     // 検索時に呼び出す
-    void onSearch(String searchText) {
-      // todo: sort機能追加
+    void onSearch(String searchText, String sort) {
       ref
           .watch(githubRepoProvider.notifier)
           .searchRepo(
-            RepoSearchInput(searchText: searchText, sort: "stars"),
+            RepoSearchInput(searchText: searchText, sort: sort),
             _viewModel,
           );
     }
