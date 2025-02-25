@@ -24,6 +24,7 @@ class SearchInputBar extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.0),
         ),
         child: TextField(
+          key: const Key("SearchTextField"),
           controller: searchController,
           onSubmitted: (text) => onSearch(text),
           textAlignVertical: TextAlignVertical(y: 0),
