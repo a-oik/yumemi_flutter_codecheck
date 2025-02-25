@@ -11,13 +11,15 @@ import '../state_notifier/repo_info_notifier.dart';
 import 'github_search_screen_view_model.dart';
 
 class GithubSearchScreen extends ConsumerWidget {
-  GithubSearchScreen({super.key});
+  GithubSearchScreen({super.key, GithubSearchScreenViewModel? viewModel}) {
+    _viewModel = viewModel ?? GithubSearchScreenViewModel();
+  }
 
   final TextEditingController _searchController = TextEditingController(
     text: '',
   );
 
-  final _viewModel = GithubSearchScreenViewModel();
+  late GithubSearchScreenViewModel _viewModel;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
