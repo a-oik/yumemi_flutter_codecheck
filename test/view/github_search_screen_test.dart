@@ -8,11 +8,11 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:yumemi_flutter_codecheck/l10n/l10n.dart';
 import 'package:yumemi_flutter_codecheck/repository/github_search_repository.dart';
-import 'package:yumemi_flutter_codecheck/view/github_search_screen.dart';
+import 'package:yumemi_flutter_codecheck/view/screen/github_search_screen.dart';
 
 import 'dart:io';
 
-import 'package:yumemi_flutter_codecheck/view/github_search_screen_view_model.dart';
+import 'package:yumemi_flutter_codecheck/view_model/github_search_screen_view_model.dart';
 
 import '../repository/github_search_repository_mock_data.dart';
 import 'github_search_screen_test.mocks.dart';

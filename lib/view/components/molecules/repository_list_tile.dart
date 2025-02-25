@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yumemi_flutter_codecheck/model/repository_info.dart';
-import 'package:yumemi_flutter_codecheck/view/repository_detail_screen.dart';
+import 'package:yumemi_flutter_codecheck/view/screen/repository_detail_screen.dart';
 
 /// repository情報のリストタイル
 class RepositoryListTile extends StatelessWidget {
