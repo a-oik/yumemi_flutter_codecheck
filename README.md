@@ -6,8 +6,8 @@
 | ---- | ---- |
 | <img width="336" alt="スクリーンショット 2025-02-25 3 01 19" src="https://github.com/user-attachments/assets/b771422c-57f9-4a03-8ab1-264f9c1b5cb2" /> | <img width="330" alt="スクリーンショット 2025-02-25 3 01 30" src="https://github.com/user-attachments/assets/9dd9d48f-ebbb-48b5-a65a-f5b98ebc8eb1" />|
 
-デモ
-https://github.com/user-attachments/assets/10c9e8e3-0671-483c-a830-1a6f5591cc1a
+デモ動画  
+https://github.com/user-attachments/assets/3c7c41a2-5bef-48b9-b401-3dcdee9ec4f2
 
 ## 動作環境
 
@@ -126,13 +126,13 @@ flutter run
 * コミットメッセージにissue番号を#XX で記載し、Git履歴からissueを遡れるようにしました。
 * FutureProviderを使用してローディング・エラー表示をシンプルに実装しました。
 * コメントでコードを読みやすいようにしました。
+* 並び替え機能を実装しました。
 * テストコードの拡張性のため、各クラスで利用するデータ取得クラス(repository層やhttpクライアント等)をDIできるようにしました。
 * シンプルで使いやすい、スタイリッシュなデザインを意識しました。
 * 多言語対応はOSの言語設定を反映し、アプリ内では操作できないようにしました。
 
 ## 時間の都合で実装できなかったこと
 * Githubのレポジトリページに飛ぶボタン等の実装
-* 並び替え機能の実装
 * 不具合修正 issue #28
 * Dotenvライブラリを利用し、デプロイ環境を分けられるようにする
 * Github actionsを使用して、プッシュを行う度にコードフォーマット・テストコード実行できるようにする

@@ -19,13 +19,13 @@ class RepoInfoNotifier extends StateNotifier<AsyncValue<RepoInfo>> {
     GithubSearchScreenViewModel viewModel,
   ) async {
     state = AsyncLoading();
-    final useCaseResult = await viewModel.getRepoInfo(input: input);
+    final result = await viewModel.getRepoInfo(input: input);
 
-    if (useCaseResult.result == RequestResult.apiError) {
+    if (result.result == RequestResult.apiError) {
       state = AsyncValue.error({}, StackTrace.current);
       return;
     }
 
-    state = AsyncData(useCaseResult.data);
+    state = AsyncData(result.data);
   }
 }
