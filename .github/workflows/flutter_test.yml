@@ -22,5 +22,8 @@ jobs:
       - name: 📦 パッケージを取得
         run: flutter pub get
 
+      - name: ⚙️ Generate code (build_runner)
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
       - name: 🧪 テストを実行
         run: flutter test
