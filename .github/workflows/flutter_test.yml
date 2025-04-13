@@ -1,0 +1,26 @@
+name: Flutter Test
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 リポジトリをチェックアウト
+        uses: actions/checkout@v3
+
+      - name: 🧰 Flutter をセットアップ
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'
+
+      - name: 📦 パッケージを取得
+        run: flutter pub get
+
+      - name: 🧪 テストを実行
+        run: flutter test
